@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- HEADER com capa da música e player do Spotify -->
+    <header class="music-header">
+        <div class="music-card">
+            <img src="assets/capa.jpg" alt="Capa da música" class="capa-musica">
+            <div class="info-musica">
+                <h2>Alma Gêmea</h2>
+                <p>Fábio Jr.</p>
+            </div>
+        </div>
+
+        <!-- Player do Spotify embutido -->
+        <div class="spotify-player">
+            <iframe data-testid="embed-iframe" style="border-radius:12px"
+                src="https://open.spotify.com/embed/track/0cP8fL9xvi8OYisR8OJuzN?utm_source=generator" width="100%"
+                height="80" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+            </iframe>
+        </div>
+    </header>
+
+
+
+    <!-- Seção da foto com corações -->
+    <section class="foto-casal">
+        <img src="./assets/fotos/20241105_155939.jpg" alt="Foto do casal" class="imagem-casal">
+
+        <!-- Container para corações flutuantes -->
+        <div class="coracoes">
+            <span class="coracao">❤️</span>
+            <span class="coracao">❤️</span>
+            <span class="coracao">❤️</span>
+        </div>
+    </section>
+
+
+    <!-- Frase romântica -->
+    <section class="frase">
+        <p>Te amo mais do que tudo há ❤️</p>
+    </section>
+
+    <!-- Contador -->
+    <section class="contador">
+        <p>Estamos juntos há:</p>
+        <div id="tempo"></div>
+    </section>
+
+    <!-- Rodapé com QR -->
+    <footer>
+        <p>memoryilt.com/seulink</p>
+        <img src="assets/qrcode.png" alt="QR Code">
+    </footer>
+</body>
+
+</html>

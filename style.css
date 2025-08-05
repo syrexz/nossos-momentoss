@@ -1,0 +1,76 @@
+header {
+    color: aqua;
+}
+
+/* Seção da imagem do casal */
+.foto-casal {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+/* Imagem principal */
+.imagem-casal {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+/* Container de corações */
+.coracoes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* Coração individual */
+.coracao {
+    position: absolute;
+    font-size: 20px;
+    color: red;
+    animation: flutuar 4s infinite ease-in-out;
+    opacity: 0.8;
+}
+
+/* Posições aleatórias */
+.coracao:nth-child(1) {
+    left: 30%;
+    animation-delay: 0s;
+}
+
+.coracao:nth-child(2) {
+    left: 50%;
+    animation-delay: 1s;
+}
+
+.coracao:nth-child(3) {
+    left: 70%;
+    animation-delay: 2s;
+}
+
+/* Animação de subida */
+@keyframes flutuar {
+    0% {
+        bottom: 0;
+        opacity: 0;
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(-50px) scale(1.2);
+    }
+
+    100% {
+        bottom: 100%;
+        opacity: 0;
+        transform: translateY(-100px) scale(0.8);
+    }
+}
